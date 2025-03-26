@@ -6,6 +6,7 @@
   "author": "alphasec",
   "license": "MIT",
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.19.2"
   },
   "scripts": {

@@ -1,10 +1,11 @@
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const indexRouter = require('./routes/index');
 
 const app = express();
-const PORT = 3000;
-
+const PORT = process.env.PORT || 5000;
+console.log(PORT);
 // Serve static files from the "public" directory
 app.use(express.static(path.join(__dirname, 'public')));
 
